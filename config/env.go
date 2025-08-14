@@ -33,7 +33,7 @@ func initConfig() Config {
 		Password:               getEnv("DB_PASSWORD", ""),
 		Host:                   getEnv("DB_HOST", ""),
 		Port:                   port,
-		DBName:                 getEnv("DB_NAME", ""),
+		DBName:                 getEnv("DB_NAME", "GoEcom"),
 		JWTExpirationInSeconds: getEnvAsInt("JWT_EXPIRATION_IN_SECONDS", 3600*24*7),
 		JWTSecret:              getEnv("JWT_SECRET", ""),
 	}
